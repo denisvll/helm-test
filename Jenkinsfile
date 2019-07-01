@@ -1,10 +1,16 @@
 pipeline{
-  agent any
+agent {
+  docker {
+    image 'ubuntu'
+    label 'latest'
+  }
+}
+
   stages{
 	stage('Stage 1') {
            steps {
               echo 'dasdasda'
-	      sh 'echo "hui1"'
+	      sh 'apt-get update'
               }
 	}
 	stage('Stage 2') {
