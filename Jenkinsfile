@@ -1,8 +1,7 @@
 pipeline{
 agent {
   docker {
-    image 'ubuntu'
-    label 'latest'
+    image 'ubuntu:latest'
   }
 }
 
