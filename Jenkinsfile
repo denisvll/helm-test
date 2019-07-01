@@ -7,10 +7,16 @@ pipeline{
               }
 	}
 	stage('Stage 2') {
-	   sh 'echo "hui2"'
+           steps {
+              echo 'dasdasda'
+	      sh 'echo "hui2"'
+              }
 	}
 	stage('Stage 3') {
-           sh 'echo "hui3"'
+           steps {
+              echo 'dasdasda'
+	      sh 'echo "hui3"'
+              }
 	
 	}
 	}
