@@ -1,4 +1,5 @@
-node{
+pipeline{
+  stages{
 	stage('Stage 1') {
            steps {
               echo 'dasdasda'
@@ -11,5 +12,6 @@ node{
 	stage('Stage 3') {
            sh 'echo "hui3"'
 	
+	}
 	}
 }
