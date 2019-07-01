@@ -1,6 +1,9 @@
 node{
 	stage('Stage 1') {
-	   sh 'echo "hui1"'
+           steps {
+              echo 'dasdasda'
+	      sh 'echo "hui1"'
+              }
 	}
 	stage('Stage 2') {
 	   sh 'echo "hui2"'
